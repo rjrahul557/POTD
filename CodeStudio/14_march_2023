@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+string toHex(int nums) {
+	unsigned int num = nums;
+	if(num == 0)return to_string(0);
+	string digits = "0123456789ABCDEF";
+	string res="";
+	while(num>0)
+	{
+		int rem = num%16;
+		res += digits[rem];
+		num=num/16;
+	}
+	reverse(res.begin(),res.end());
+	return res;
+}
