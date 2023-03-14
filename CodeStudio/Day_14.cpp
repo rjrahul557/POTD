@@ -1,7 +1,9 @@
-#include <bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
 string toHex(int nums) {
 	unsigned int num = nums;
-	if(num == 0)return to_string(0);
+
 	string digits = "0123456789ABCDEF";
 	string res="";
 	while(num>0)
